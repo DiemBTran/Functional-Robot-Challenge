@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GoodRobot from "./Component/GoodRobot";
 import BadRobot from "./Component/BadRobot";
+import ThirdRobot from "./Component/ThirdRobot";
 
 export default function App() {
   const [userInput, setInput] = useState("");
@@ -20,6 +21,7 @@ export default function App() {
       />
       <GoodRobot banana={userInput} />
       <BadRobot userInput={userInput} />
+      <ThirdRobot userInput={userInput} />
     </div>
   );
 }
